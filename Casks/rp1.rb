@@ -3,7 +3,7 @@ cask "rp1" do
   name "rp1"
   desc "AI-assisted development workflows CLI"
   homepage "https://rp1.run"
-  version "0.4.4"
+  version "0.4.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,12 +12,12 @@ cask "rp1" do
   on_macos do
     on_intel do
       url "https://github.com/rp1-run/rp1/releases/download/v#{version}/rp1-darwin-amd64"
-      sha256 "2640199d6f1d2c716a31d48bc205cba97eb43e3cc5bef8e61514ada75fefcc27"
+      sha256 "6d36574b9e130fce98665c964edaafd58285c98d540399b0bcf94c59e15eaf0f"
       binary "rp1-darwin-amd64", target: "rp1"
     end
     on_arm do
       url "https://github.com/rp1-run/rp1/releases/download/v#{version}/rp1-darwin-arm64"
-      sha256 "18bc1dd6c5e97efdaa5a07b809e8a1484e2fe9d4c5d105e1d5f6502333907d27"
+      sha256 "a2797b3dbc3d91af53afde356eac4d3155fe2a0025f4f1a23b98fd5dc09d14bb"
       binary "rp1-darwin-arm64", target: "rp1"
     end
   end
@@ -25,12 +25,12 @@ cask "rp1" do
   on_linux do
     on_intel do
       url "https://github.com/rp1-run/rp1/releases/download/v#{version}/rp1-linux-amd64"
-      sha256 "c0c611f7a9184063939b074063eb08dffb5c0230a9058e230d7925d7f1c2f79c"
+      sha256 "2d2a55cb453b38856629b706f83a9ef6c1fb697f353a0f74a2b1bd7fb61fb99b"
       binary "rp1-linux-amd64", target: "rp1"
     end
     on_arm do
       url "https://github.com/rp1-run/rp1/releases/download/v#{version}/rp1-linux-arm64"
-      sha256 "778b727497ae5da1bf50319ea9f8c95ec6e84f3228b0b6316785752db9188535"
+      sha256 "f4f1dfc56102a96d123458d46d75786657bb307654f4dc87a7da57a92da6dd33"
       binary "rp1-linux-arm64", target: "rp1"
     end
   end
