@@ -1,23 +1,23 @@
 class Oneup < Formula
   desc "Unified search substrate for source repositories"
   homepage "https://github.com/rp1-run/1up"
-  version "0.1.6"
+  version "0.1.7"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rp1-run/1up/releases/download/v0.1.6/1up-v0.1.6-aarch64-apple-darwin.tar.gz"
-      sha256 "afbfe36fca6962ea05595aeca0b85dd4626a7fffdb7363aaa039647163c87915"
+      url "https://github.com/rp1-run/1up/releases/download/v0.1.7/1up-v0.1.7-aarch64-apple-darwin.tar.gz"
+      sha256 "abd55d02f7e000eb3f864c10c86271371f7a81648b5dc2521edf8bab589fbd57"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/rp1-run/1up/releases/download/v0.1.6/1up-v0.1.6-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "77f04758e21786ee34a1bf00d3bdcc5b4879a17eb55bb4db78fd82b54232765e"
+      url "https://github.com/rp1-run/1up/releases/download/v0.1.7/1up-v0.1.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e68330cb2df95974bc39e735b4c66fca6906f7b7b7d5d4aae3e90ec45d59ae30"
     else
-      url "https://github.com/rp1-run/1up/releases/download/v0.1.6/1up-v0.1.6-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "21b8704de1658e811ed3f6c5e591c446beaea2ef948eae0bbbde7b4c8e273e75"
+      url "https://github.com/rp1-run/1up/releases/download/v0.1.7/1up-v0.1.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3cd2aca5fc6338b3e133042b58f24355891dabbb2b76c15e9b8ed2d5dd9d3b9d"
     end
   end
 
