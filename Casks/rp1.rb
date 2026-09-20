@@ -38,8 +38,10 @@ cask "rp1" do
       "rp1-beta",
     ]
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", staged_path] if OS.mac?
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}"]
+    end
   end
 
   # No zap stanza required
